@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  <title>Hamzik Portfolio</title>
+  <title>Photographer Portfolio</title>
 </head>
 
 <body>
 
   <div class="wrapper">
-    <div class="left"></div>
     <div class="right"></div>
+    <div class="left"></div>
 
     <nav class="nav">
       <ul>
@@ -25,7 +25,7 @@
         <li class="collection">collection</li>
         <li class="explore">explore</li>
         <li class="search">search</li>
-        <li class="profile">
+        <li class="profile">Photographer</li>
           <div class="img"></div>
         </li>
       </ul>
@@ -38,7 +38,7 @@
 
       <div class="info">
         <ul>
-          <li>unsplash.com</li>
+          <li>HamzikHZK.com</li>
           <li>@HamzikHZK</li>
           <li>HamzikHZK.com</li>
           <li><i class="fa fa-share-alt"></i></li>
@@ -64,13 +64,13 @@
 
   <script>
 
-    TweenMax.to('.left', 2, {
+    TweenMax.to('.right', 2, {
       delay: .8,
       width: '50%',
       ease: Power2.easeInOut
     })
 
-    TweenMax.to('.right', 2, {
+    TweenMax.to('.left', 2, {
       delay: .6,
       width: '50%',
       ease: Power3.easeInOut
@@ -120,5 +120,82 @@
 
   </script>
 </body>
+<script
+src="https://kit.fontawesome.com/25bc89a4e6.js"
+crossorigin="anonymous"
+></script>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/hamzikhassan/" target="_blank">
+      <i class="fab fa-instagram"></i>
+
+    </a>
+
+  </div>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: rgb(7, 1, 7);
+    }
+
+    .social-links {
+      margin-top: 200px; /*use any margin that u need*/
+      display: flex;
+      justify-content: center;
+    }
+
+    a {
+      height: 70px;
+      width: 70px;
+      margin: 0 20px; /*as bigger margin as farther from each other will be social links*/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background-color: rgb(43, 56, 8); /*use the same color that body background or any other matching color that u like*/
+      border-radius: 50%; /*50% make round shape,
+      u can use border-radius less than 50% to have oval shape*/
+      border: 1px solid rgba(241, 224, 241, 0.72);
+      box-shadow: 8px 8px 12px -2px rgb(187, 192, 196),
+        -5px -5px 9px -2px rgb(173, 177, 177);
+      transition: transform 1s; /*any transition number from 0.3s to 1s*/
+    }
+
+    a i {
+      font-size: 50px; /*any font-size from 20px to 40px will look good. I've used 50px just
+        for demonstration purpose*/
+      color: rgb(77, 113, 119);
+      transition: transform 1s; /*it's great to match a{transition: transform 1s;} with
+      i{transition: transform 1s;} it will be synchronized*/
+    }
+
+    a:hover {
+      box-shadow: inset 6px 6px 8px -2px rgb(168, 170, 172),
+        inset -6px -6px 8px -2px rgb(193, 211, 214),
+        0px 12px 10px -10px rgb(124, 146, 143);
+      border: 2px solid rgba(194, 171, 194, 0.3);
+      transform: translateY(3px);
+    }
+
+    a:hover i {
+      transform: scale(0.85);
+    }
+
+    a:hover .fa-instagram {
+      color: #e4405f;
+    }
+
+
+
+
+  </style>
+</body>
+</html>
+
 
 </html>
